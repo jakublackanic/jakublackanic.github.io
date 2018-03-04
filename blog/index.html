@@ -1,11 +1,37 @@
 ---
 layout: default
 title: Jakub Lackanic's Blog
+page.url: /blog 
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+<div class="container">
+    <h1>Here you can find interesting things posted from me!</h1>
+    <p>Don't wait and read, if you want to find out something new.</p>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2>{{ page.title }}</h2></div>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Date</th> 
+            </tr>
+            <!--
+{% comment %}
+=======================
+The purpose of this snippet is to list all the tags you have in your site.
+=======================
+{% endcomment %}
+{% for tag in tags %}
+<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+{% endfor %}
+-->
+            {% for post in site.posts %}
+            <tr>
+                <th><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></th> 
+                <th>{{ post.date | date_to_string }}</th>
+            </tr>
+            {% endfor %}
+            
+        </table>
+    </div>
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+
+</div>

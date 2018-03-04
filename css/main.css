@@ -1,9 +1,10 @@
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: 'Roboto', sans-serif;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,7 +22,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Roboto', sans-serif;
 }
 p {
     font-size: 1.5em;
@@ -31,4 +32,89 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+}
+
+#test {
+    font-size: 1.0em;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.sidenav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 10px;
+    background: #FFFFFF;
+    overflow-x: hidden;
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.moved_table {
+    position: relative;
+    left: 30px;
+}
+
+.mod_table {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.main_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pad {
+    padding: 15px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }

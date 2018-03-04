@@ -17,11 +17,25 @@
     </head>
 
     <body>
-            {% include header.html %}
 
-            {{ content }}
 
+        {% include header.html %}
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-1">
+                    {% include sidebar.html %}
+                </nav>
+
+                <div class="col-md-11">
+                    {{ content }}
+                </div>
+
+            </div>
             {% include footer.html %}
+        </div>
+
     </body>
 
 </html>
+

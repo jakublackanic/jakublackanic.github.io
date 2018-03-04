@@ -1,0 +1,57 @@
+---
+layout: default
+title: About me
+page.url: /project
+---
+
+<div class="container">
+    <h1>You can find all about my projects here!</h1>
+    <p>This page contains school projects and projects, which I did in my free time.</p>   
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2>Web publishing projects</h2></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for project in site.projects %}
+                {% if project.categories contains 'wp' %}
+                <tr>
+                    <td><a href={{project.url}}>{{project.name}}</a></td>
+                    <td>{{project.description}}</td>
+                    <td>{{project.technologies}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2>Other projects</h2></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for project in site.projects %}
+                {% if project.categories contains 'freetime' %}
+                <tr>
+                    <td>{{project.name}}</td>
+                    <td>{{project.description}}</td>
+                    <td>{{project.technologies}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
