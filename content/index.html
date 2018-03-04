@@ -5,7 +5,6 @@ page.url: /content
 ---
 
 
-<!--
 {% comment %}
 =======================
 The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
@@ -18,9 +17,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
 {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
--->
 
-<!--
 {% comment %}
 =======================
 The following part removes dulpicated tags and invalid tags like blank tag.
@@ -69,23 +66,22 @@ The following part removes dulpicated tags and invalid tags like blank tag.
         <div class="panel-heading"><h4 id="{{ tag | slugify }}">{{ tag }}</h4></div>
         <table class="table">
             <colgroup>
-                <col span="1" style="width: 33%;">
-                <col span="1" style="width: 33%;">
-                <col span="1" style="width: 33%;">
+                <col span="1" style="width: 50%;">
+<!--                <col span="1" style="width: 33%;">-->
+                <col span="1" style="width: 50%;">
             </colgroup>
             <tbody>
                 <tr>
                     <td><b>Name</b></td>
-                    <td><b>Date</b></td>
+<!--                    <td><b>Date</b></td>-->
                     <td><b>Tags</b></td> 
                 </tr>
                 {% for project in site.projects %}
                 {% if project.tags contains tag %}
                 <tr>
                     <td>
-                        <a href="{{ project.url }}">{{ project.title }}</a>
+                        {{ project.title }}
                     </td>
-                    <td>{{ project.date | date_to_string }}</td>
                     <td>
                         {% for tag in project.tags %}
                         <code><a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a></code>
@@ -98,4 +94,4 @@ The following part removes dulpicated tags and invalid tags like blank tag.
         </table>
     </div>
     {% endfor %}
-</div>-->
+</div>
