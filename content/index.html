@@ -18,6 +18,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
 
+<!--
 {% comment %}
 =======================
 The following part removes dulpicated tags and invalid tags like blank tag.
@@ -80,13 +81,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
                 {% if project.tags contains tag %}
                 <tr>
                     <td>
-<!--                        {% if project.url %}-->
                         <a href="{{ project.url }}">{{ project.title }}</a>
-<!--
-                        {% else %}
-                            {{ project.title }}
-                        {% endif %}
--->
                     </td>
                     <td>{{ project.date | date_to_string }}</td>
                     <td>
@@ -101,4 +96,4 @@ The following part removes dulpicated tags and invalid tags like blank tag.
         </table>
     </div>
     {% endfor %}
-</div>
+</div>-->
