@@ -2,7 +2,7 @@
 layout: post
 title: "Project success"
 category: dev
-tags: jekyll blog github-page hololens
+tags: [jekyll, blog, githubpages]
 date: 2017-07-11
 ---
 

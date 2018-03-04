@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Another testing of tags"
-tags: new tag test
+tags: [new, tag, test]
 date: 2016-05-24
 ---
 

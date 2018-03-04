@@ -1,0 +1,101 @@
+---
+layout: default
+title: Content and Tags
+page.url: /content
+---
+
+
+{% comment %}
+=======================
+The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+=======================
+{% endcomment %}
+{% assign rawtags = "" %}
+{% for project in site.projects %}
+{% assign ttags = project.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% comment %}
+=======================
+The following part removes dulpicated tags and invalid tags like blank tag.
+=======================
+{% endcomment %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+{% if tag != "" %}
+{% if tags == "" %}
+{% assign tags = tag | split:'|' %}
+{% endif %}
+{% unless tags contains tag %}
+{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+
+<div class="container">
+    <h2>Here you can see all projects tags.</h2>
+    <p>Feel free to use them!</p>
+
+    <div class="btn-group btn-group-justified" style="padding-bottom:2%;">
+        {% comment %}
+        =======================
+        The purpose of this snippet is to list all the tags you have in your site.
+        =======================
+        {% endcomment %}
+        {% for tag in tags %}
+
+        <a href="#{{ tag | slugify }}" class="btn btn-warning"> {{ tag }} </a>
+
+
+        {% endfor %}
+    </div>
+
+    {% comment %}
+    =======================
+    The purpose of this snippet is to list all your posts posted with a certain tag.
+    =======================
+    {% endcomment %}
+
+
+    {% for tag in tags %}
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4 id="{{ tag | slugify }}">{{ tag }}</h4></div>
+        <table class="table">
+            <colgroup>
+                <col span="1" style="width: 33%;">
+                <col span="1" style="width: 33%;">
+                <col span="1" style="width: 33%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Date</b></td>
+                    <td><b>Tags</b></td> 
+                </tr>
+                {% for project in site.projects %}
+                {% if project.tags contains tag %}
+                <tr>
+                    <td>
+                        {% if project.url %}
+                        <a href="{{ project.url }}">{{ project.title }}</a>
+                        {% else %}
+                            {{ project.title }}
+                        {% endif %}
+                    </td>
+                    <td>{{ project.date | date_to_string }}</td>
+                    <td>
+                        {% for tag in project.tags %}
+                        <code><a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a></code>
+                        {% endfor %}
+                    </td> 
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endfor %}
+</div>
