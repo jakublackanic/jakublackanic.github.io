@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Another testing of tags"
-tags: [new, tag, test]
+tags: [jekyll, tag, post]
 date: 2016-05-24
 ---
 

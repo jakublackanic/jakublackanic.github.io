@@ -5,6 +5,6 @@ technologies: "GithubPages, Jekyll, Markdown"
 description: "Assignment no.1 is this personal website."
 url: /projects/project1
 category: wp
-tags: [jekyll, githubpages, markdown]
+tags: [jekyll, githubpages, markdown, wp]
 date: 2018-03-04
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jakub Lackanic, Launches Site"
-tags: [start, new]
+tags: [post, start]
 date: 2014-04-30
 ---
 
