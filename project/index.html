@@ -55,7 +55,7 @@ page.url: /project
                 {% for project in site.projects %}
                 {% if project.categories contains 'freetime' %}
                 <tr>
-                    <td>{{project.name}}</td>
+                    <td><a href={{ project.url }}>{{project.name}}</a></td>
                     <td>{{project.description}}</td>
                     <td>{{project.technologies}}</td>
                 </tr>
