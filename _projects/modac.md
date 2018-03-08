@@ -8,5 +8,3 @@ url: /projects/modac
 tags: [php, laravel, javascript]
 date: 2018-05-10
 ---
-
-Test
