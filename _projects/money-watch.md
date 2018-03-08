@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 name: "MoneyWatch"
 technologies: "Android, Java"
 description: "Android app to track revenues and expenses."

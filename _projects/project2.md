@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 name: "Assignment 2"
 technologies: "-"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."

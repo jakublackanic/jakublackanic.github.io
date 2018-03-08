@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: projects
 name: "MODAC"
 technologies: "PHP, Laravel, JavaScript, HTML, CSS"
 description: "Bachelor thesis - create admin console for the customer."
