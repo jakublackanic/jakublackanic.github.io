@@ -42,8 +42,16 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 {% endif %}
 {% endfor %}
 
-
-<div class="container">
+<div class="container" style="height: 100%;">
+     <script>
+        $('a').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
+    </script>
+    
     <h2>Here you can see all projects and posts tags.</h2>
     <p>Feel free to use them!</p>
 
@@ -102,7 +110,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
                     </td> 
                     <td>
                         {% for tag in project.tags %}
-                        <code><a class="tag" href="/project/tag/#{{ tag | slugify }}">{{ tag }}</a></code>
+                        <code><a class="tag" href="">{{ tag }}</a></code>
                         {% endfor %}
                     </td> 
                 </tr>
@@ -128,7 +136,7 @@ The following part removes dulpicated tags and invalid tags like blank tag.
                     </td> 
                     <td>
                         {% for tag in post.tags %}
-                        <code><a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a></code>
+                        <code><a class="tag" href="">{{ tag }}</a></code>
                         {% endfor %}
                     </td> 
                 </tr>
@@ -139,3 +147,4 @@ The following part removes dulpicated tags and invalid tags like blank tag.
     </div>
     {% endfor %}
 </div>
+
