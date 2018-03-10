@@ -1,4 +1,4 @@
-#Zadanie 1 - Webové publikovanie
+# Zadanie 1 - Webové publikovanie
 
 Vytvorte webovú prezentáciu (webové sídlo) o sebe. Zamerajte sa jednak na vaše profesné záujmy (napr. projekty, ktoré riešite/riešili ste, čo vás v informatike najviac baví, fascinuje = váš developerský profil) a jednak vaše osobné záujmy, hobby.
 
@@ -22,9 +22,9 @@ Stránka personálneho webu: [jakublackanic.github.io](https://jakublackanic.git
 
 V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec jekyll server`.
 
-##Požiadavky:
+## Požiadavky:
 
-###aspoň 5 podstránok:
+### aspoň 5 podstránok:
 * Home - úvodná stránka
 * About - informácie o mne
 * CV - životopis
@@ -33,13 +33,13 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 * Content - navigácia pomocou tagov pre projekty a príspevky v blogu 
 * + podstránky príspevkov blogu a podstránky projektov
 
-###aspoň 3 layouty:
+### aspoň 3 layouty:
 * default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `Home`, `CV`, `Projects`, `Content`, `Blog`)
 * sidebar - podobné rozloženie ako default, no obsahuje navyše bočný panel pre rýchlejšiu navigáciu na podstránke (v podstránke `About`)
 * post - rozloženie elementov v príspevkoch blogu, obsahuje informácie o konkrétnom príspevku (nachádza sa vo všetkých podstránkach príspevkov)
 * projects - rozloženie elementov v podstránkach pre projekty, obsahuje informácie o konkrétnom projekte (nachádza sa vo všetkých podstránkach projektov)
 
-###aspoň 5 premenných:
+### aspoň 5 premenných:
 * tags
 * category
 * technologies
@@ -48,10 +48,10 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 * url
 * date - všetky spomenuté premenné sú použité pri kolekcii `_projects`.
 
-###Kolekcie alebo dátové súbory:
+### Kolekcie alebo dátové súbory:
 Využité kolekcie pre moje projekty -> priečinok `_projects`.
 
-###aspoň 5 filtrov alebo tagov:
+### aspoň 5 filtrov alebo tagov:
 Využil som tagy, ktoré sú využité v podstránke `Content`. Zoznam tagov:
 * android
 * c++
@@ -60,5 +60,5 @@ Využil som tagy, ktoré sú využité v podstránke `Content`. Zoznam tagov:
 * javascript
 * a ďalšie
 
-###aspoň 1 plugin:
+### aspoň 1 plugin:
 V projekte je využitý plugin `jemoji`, ktorý nám umožňuje využívať v texte smajlíkov (napríklad v príspevku blogu [Project Success](https://jakublackanic.github.io/blog/2017/07/11/project-success)).
