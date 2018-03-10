@@ -31,7 +31,7 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 * Blog - blog a jeho príspevky
 * Projects - informácie o mojich projektoch
 * Content - navigácia pomocou tagov pre projekty a príspevky v blogu 
-* + podstránky príspevkov blogu a podstránky projektov
+* podstránky príspevkov blogu a podstránky projektov
 
 ### aspoň 3 layouty:
 * default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `Home`, `CV`, `Projects`, `Content`, `Blog`)
