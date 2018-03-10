@@ -63,7 +63,7 @@ Zoznam tagov:
 
 Zoznam filtrov:
 * date_to_string - zobrazenie dátumu
-* slugify - lowercase pre hodnotu
+* slugify - lowercase pre string
 
 ### aspoň 1 plugin:
 V projekte je využitý plugin `jemoji`, ktorý nám umožňuje využívať v texte smajlíkov (napríklad v príspevku blogu [Project Success](https://jakublackanic.github.io/blog/2017/07/11/project-success)).
