@@ -25,13 +25,13 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 ## Požiadavky:
 
 ### aspoň 5 podstránok:
-* Home - úvodná stránka
-* About - informácie o mne
-* CV - životopis
-* Blog - blog a jeho príspevky
-* Projects - informácie o mojich projektoch
-* Content - navigácia pomocou tagov pre projekty a príspevky v blogu 
-* podstránky príspevkov blogu a podstránky projektov
+* [Home](https://jakublackanic.github.io/) - úvodná stránka
+* [About](https://jakublackanic.github.io/about/) - informácie o mne
+* [CV](https://jakublackanic.github.io/cv/) - životopis
+* [Blog](https://jakublackanic.github.io/blog/) - blog a jeho príspevky
+* [Projects](https://jakublackanic.github.io/project/) - informácie o mojich projektoch
+* [Content](https://jakublackanic.github.io/content/) - navigácia pomocou tagov pre projekty a príspevky v blogu 
+* podstránky príspevkov blogu a podstránky projektov (napríklad [Another testing of tags](https://jakublackanic.github.io/blog/2016/05/24/another-testing-of-tags)  a [MODAC](https://jakublackanic.github.io/projects/modac/) )
 
 ### aspoň 3 layouty:
 * default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `Home`, `CV`, `Projects`, `Content`, `Blog`)
