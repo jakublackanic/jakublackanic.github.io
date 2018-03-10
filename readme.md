@@ -20,7 +20,7 @@ Podrobné požiadavky na vypracovanie a odovzdanie zadania (priemerná úroveň 
 
 Stránka personálneho webu: [jakublackanic.github.io](https://jakublackanic.github.io/), testovaná na prehliadači Google chrome verzia 65.
 
-V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec jekyll server`.
+V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec jekyll serve`.
 
 ## Požiadavky:
 
