@@ -34,7 +34,7 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 * podstránky príspevkov blogu a podstránky projektov (napríklad [Another testing of tags](https://jakublackanic.github.io/blog/2016/05/24/another-testing-of-tags)  a [MODAC](https://jakublackanic.github.io/projects/modac/) )
 
 ### aspoň 3 layouty:
-* default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `[Home](https://jakublackanic.github.io/)`, `[CV](https://jakublackanic.github.io/cv/)`, `[Projects](https://jakublackanic.github.io/project/)`, `[Content](https://jakublackanic.github.io/content/)`, `[Blog](https://jakublackanic.github.io/blog/)`)
+* default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach [Home](https://jakublackanic.github.io/), [CV](https://jakublackanic.github.io/cv/), [Projects](https://jakublackanic.github.io/project/), [Content](https://jakublackanic.github.io/content/), [Blog](https://jakublackanic.github.io/blog/))
 * sidebar - podobné rozloženie ako default, no obsahuje navyše bočný panel pre rýchlejšiu navigáciu na podstránke (v podstránke [About](https://jakublackanic.github.io/about/))
 * post - rozloženie elementov v príspevkoch blogu, obsahuje informácie o konkrétnom príspevku (nachádza sa vo všetkých podstránkach príspevkov)
 * projects - rozloženie elementov v podstránkach pre projekty, obsahuje informácie o konkrétnom projekte (nachádza sa vo všetkých podstránkach projektov)
@@ -52,7 +52,7 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 Využité kolekcie pre moje projekty -> priečinok `_projects`.
 
 ### aspoň 5 filtrov alebo tagov:
-Tagy a filtre sú využité hlavne v podstránke `[Content](https://jakublackanic.github.io/content/)`
+Tagy a filtre sú využité hlavne v podstránke [Content](https://jakublackanic.github.io/content/)
 
 Zoznam tagov:
 * for / endfor
