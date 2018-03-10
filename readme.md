@@ -34,8 +34,8 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 * podstránky príspevkov blogu a podstránky projektov (napríklad [Another testing of tags](https://jakublackanic.github.io/blog/2016/05/24/another-testing-of-tags)  a [MODAC](https://jakublackanic.github.io/projects/modac/) )
 
 ### aspoň 3 layouty:
-* default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `Home`, `CV`, `Projects`, `Content`, `Blog`)
-* sidebar - podobné rozloženie ako default, no obsahuje navyše bočný panel pre rýchlejšiu navigáciu na podstránke (v podstránke `About`)
+* default - základné rozloženie stránky, ktoré využívajú takmer všetky podstránky (náchadza sa v podstránkach `[Home](https://jakublackanic.github.io/)`, `[CV](https://jakublackanic.github.io/cv/)`, `[Projects](https://jakublackanic.github.io/project/)`, `[Content](https://jakublackanic.github.io/content/)`, `[Blog](https://jakublackanic.github.io/blog/)`)
+* sidebar - podobné rozloženie ako default, no obsahuje navyše bočný panel pre rýchlejšiu navigáciu na podstránke (v podstránke [About](https://jakublackanic.github.io/about/))
 * post - rozloženie elementov v príspevkoch blogu, obsahuje informácie o konkrétnom príspevku (nachádza sa vo všetkých podstránkach príspevkov)
 * projects - rozloženie elementov v podstránkach pre projekty, obsahuje informácie o konkrétnom projekte (nachádza sa vo všetkých podstránkach projektov)
 
@@ -52,13 +52,18 @@ V prípade problémov pri lokálnom spustení, pustiť cez príkaz `bundle exec 
 Využité kolekcie pre moje projekty -> priečinok `_projects`.
 
 ### aspoň 5 filtrov alebo tagov:
-Využil som tagy, ktoré sú využité v podstránke `Content`. Zoznam tagov:
-* android
-* c++
-* githubpages
-* java
-* javascript
-* a ďalšie
+Tagy a filtre sú využité hlavne v podstránke `[Content](https://jakublackanic.github.io/content/)`
+
+Zoznam tagov:
+* for / endfor
+* assign 
+* if / endif / endunless
+* contains
+* comment
+
+Zoznam filtrov:
+* date_to_string - zobrazenie dátumu
+* slugify - lowercase pre hodnotu
 
 ### aspoň 1 plugin:
 V projekte je využitý plugin `jemoji`, ktorý nám umožňuje využívať v texte smajlíkov (napríklad v príspevku blogu [Project Success](https://jakublackanic.github.io/blog/2017/07/11/project-success)).
