@@ -10,6 +10,12 @@ tags: [wp]
 
 Cieľom tohto zadania bolo napísať nejaký text(najlepšie bakalársku prácu) vo formáte DocBook. Pri vypracovaní bola použitá dostupná šablona, ktorá bola neskôr upravená. Finálny dokument bol validovaný v programe XMLMind.
 
+Atribút *lang* elementu *book* bol nastavený na **sk**, keďže chceme v texte používať slovenčinu.
+
+```xml
+<book lang="sk">
+```
+
 ---
 
 ## Úprava šablóny
@@ -107,7 +113,7 @@ položky v týchto zoznamoch boli vytvorené pomocou **listitem**.
 
 ---
 
-Vloženie obrázka, na ktorý ide odkazovať z textu a ktorý obsahuje v názve poznámku pod čiarou s citáciou na zdroj:
+Vloženie obrázka, ktorý obsahuje v názve poznámku pod čiarou s citáciou na zdroj. Vďaka atribútu *id* v elemente *figure* dokážeme na tento obrázok odkazovať z textu.
 
 ```xml
 <figure id="architecture_figure">
@@ -129,7 +135,7 @@ Vloženie obrázka, na ktorý ide odkazovať z textu a ktorý obsahuje v názve 
 
 ---
 
-Vloženie tabuľky, ktorej názov obsahuje poznámku pod čiarou s citáciou na zdroj:
+Vloženie tabuľky, ktorej názov obsahuje poznámku pod čiarou s citáciou na zdroj. V elemente *tgroup* sme nastavili atribút *align* na left, kedže chceme zarovnávanie textu vľavo a atribút *cols* na hodnotu 2, keďže máme 2 stĺpce. Element **thead** obsahuje hlavičku tabuľky a **tbody** obsahuje telo tejto tabuľky.
 
 ```xml
 <table frame="all">
@@ -163,7 +169,7 @@ Vloženie tabuľky, ktorej názov obsahuje poznámku pod čiarou s citáciou na 
 
 ---
 
-Odkazy na iné časti dokumentu, napr. tabuľky:
+Odkazy na iné časti dokumentu, napr. tabuľky. Pomocou elementu *link* dokážeme odkazovať na iné časti dokumentu, stačí ako v atribúte *linkend* nastavíme id elementu, na ktorý chceme odkazovať.
 
 ```xml
 <link linkend="html_comparison">tabuľka 2.2</link>
@@ -171,7 +177,7 @@ Odkazy na iné časti dokumentu, napr. tabuľky:
 
 ---
 
-Vytváranie indexov:
+Vytváranie indexov. Termín pre index sa vytvára pomocou elementu *indexterm*. Tento element následne obsahuje podelementy *primary* a *secondary*. 
 
 ```xml
 <indexterm>
@@ -180,7 +186,7 @@ Vytváranie indexov:
 </indexterm>
 ```
 
-a následné vypísanie zoznamu indexov:
+Výpis týchto termínov sa následne uskutoční pomocou elementu *index*.
 
 ```xml
 <index type="name"/>
